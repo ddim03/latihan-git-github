@@ -98,7 +98,7 @@ header {
 }
 
 .nav {
-  background-color: blue;
+  background-color: #60a148;
   color: white;
   text-align: center;
   width: 100%;
@@ -120,7 +120,7 @@ header {
 }
 
 .active {
-  background-color: blue !important;
+  background-color: #60a148 !important;
 }
 
 .nav-link a {
