@@ -1,0 +1,449 @@
+:root {
+  --primary: #60a148;
+  --heading: #252625;
+  --overlay: rgb(103, 106, 103);
+  --desc: #676a67;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul > li {
+  list-style: none;
+}
+
+button {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.container.xl {
+  max-width: 1280px;
+}
+
+header {
+  background-color: white;
+  padding: 15px 0 0;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.container.fluid {
+  max-width: 100%;
+}
+
+.brand {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 10px;
+  padding: 0 5px;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  gap: 13px;
+}
+
+.logo {
+  width: 400px;
+}
+
+.logo .brand-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+.logo .brand-name {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.logo .brand-slogan {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--desc);
+}
+
+.contact {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  justify-content: end;
+  color: var(--desc);
+  margin: 10px;
+}
+
+.nav {
+  background-color: var(--primary);
+  color: white;
+  text-align: center;
+  width: 100%;
+}
+
+.nav-list {
+  padding: 10px 0;
+  overflow: hidden;
+}
+
+.nav-list.close {
+  height: 44px;
+}
+
+.nav-link {
+  display: block;
+  padding: 10px;
+  transition: color 0.3s;
+}
+
+.active {
+  background-color: #406c30 !important;
+}
+
+.nav-link a {
+  font-size: 16px;
+}
+
+#open-menu {
+  padding: 0 0 10px;
+  width: 100%;
+  cursor: pointer;
+}
+
+.hero {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.hero .arrow-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 50px;
+  z-index: 998;
+  background-color: rgba(103, 106, 103, 0.8);
+}
+
+.hero .arrow-button.left {
+  left: 10px;
+}
+.hero .arrow-button.right {
+  right: 10px;
+}
+
+.hero .arrow-button .arrow-icon {
+  width: 12px;
+  height: 24px;
+}
+
+.hero .arrow-button .arrow-icon.left {
+  transform: scaleX(-1);
+}
+
+.hero-item {
+  position: relative;
+}
+
+.hero-item .hero-img {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.hero-content {
+  position: absolute;
+  bottom: 24px;
+  left: 50px;
+  background-color: rgba;
+  padding: 14px 18px;
+  color: white;
+  background-color: rgba(103, 106, 103, 0.8);
+}
+
+.hero-content .hero-title {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.hero-content .hero-button {
+  display: block;
+  width: fit-content;
+  margin-top: 10px;
+  padding: 9px;
+  background-color: var(--primary);
+  font-size: 10px;
+}
+
+.nav-link:hover,
+.hero-content .hero-button:hover {
+  background-color: #406c30;
+}
+
+.content {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.card {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  box-shadow: 0px 0px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.card .card-img {
+  max-width: 300px;
+  min-width: 200px;
+}
+
+.card .card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  overflow: hidden;
+}
+
+.card .card-body {
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.card-body .card-title {
+  margin-bottom: 13px;
+}
+
+.card-body .card-title h2 {
+  font-size: 18px;
+  font-weight: 600;
+}
+.card-body .card-title span {
+  font-size: 16px;
+  color: var(--desc);
+}
+
+.card-body p {
+  font-size: 14px;
+  color: var(--desc);
+  text-align: justify;
+  text-overflow: ellipsis;
+}
+
+.card-link {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+}
+
+.card-link a {
+  color: var(--primary);
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.news-section {
+  margin-top: 30px;
+  padding: 0 5px;
+}
+
+.section-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 18px;
+}
+
+.card-news-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.news-card {
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+
+.news-card .card-body span {
+  font-size: 12px;
+}
+.galeri-container {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding: 0 5px;
+}
+
+.title {
+  text-align: center;
+  font-size: 18px;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 17px;
+}
+
+.gallery img {
+  width: 100%;
+}
+
+aside {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 0 5px;
+  gap: 17px;
+}
+
+aside .aside-title {
+  font-size: 18px;
+}
+
+.ppdb-poster img {
+  width: 100%;
+}
+
+.aside-group {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.map {
+  width: 100%;
+}
+
+.aside-content {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+footer {
+  width: 100%;
+  background-color: var(--heading);
+  padding: 18px 0;
+  display: flex;
+  justify-content: center;
+  color: white;
+  align-items: center;
+}
+
+footer p {
+  font-size: 14px;
+}
+
+@media (width > 768px) {
+  .brand {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 5px;
+  }
+
+  .nav {
+    color: white;
+    text-align: start;
+    width: 100%;
+  }
+
+  .nav-list {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+  }
+
+  #open-menu {
+    display: none;
+  }
+
+  .hero-content {
+    bottom: 48px;
+    left: 120px;
+  }
+
+  .hero-content .hero-title {
+    font-size: 20px;
+  }
+
+  .hero-content .hero-button {
+    font-size: 14px;
+  }
+
+  .hero .arrow-button {
+    width: 40px;
+    height: 100px;
+  }
+
+  .hero .arrow-button.left {
+    left: 30px;
+  }
+  .hero .arrow-button.right {
+    right: 30px;
+  }
+
+  .hero .arrow-button .arrow-icon {
+    width: 12px;
+    height: 24px;
+  }
+
+  .content {
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .content .content-item {
+    width: 70%;
+  }
+  .card .card-body {
+    padding: 27px 20px;
+  }
+  .news-card {
+    flex-direction: row;
+  }
+  aside {
+    width: 30%;
+  }
+  .gallery img {
+    width: 300px;
+  }
+
+  .galeri-container,
+  .news-section {
+    padding: 0;
+  }
+}
