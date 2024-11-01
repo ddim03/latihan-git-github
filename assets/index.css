@@ -98,7 +98,7 @@ header {
 }
 
 .nav {
-  background-color: var(--primary);
+  background-color: blue;
   color: white;
   text-align: center;
   width: 100%;
@@ -120,7 +120,7 @@ header {
 }
 
 .active {
-  background-color: #406c30 !important;
+  background-color: blue !important;
 }
 
 .nav-link a {
@@ -201,7 +201,7 @@ header {
 
 .nav-link:hover,
 .hero-content .hero-button:hover {
-  background-color: #406c30;
+  background-color: blue;
 }
 
 .content {
