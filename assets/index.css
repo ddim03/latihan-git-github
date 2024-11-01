@@ -354,7 +354,7 @@ aside .aside-title {
 
 footer {
   width: 100%;
-  background-color: var(--heading);
+  background-color: blue;
   padding: 18px 0;
   display: flex;
   justify-content: center;
