@@ -394,7 +394,6 @@ footer p {
   .hero-content {
     bottom: 48px;
     left: 120px;
-    border-radius: 10%;
   }
 
   .hero-content .hero-title {
@@ -403,7 +402,6 @@ footer p {
 
   .hero-content .hero-button {
     font-size: 14px;
-    border-radius: 10%;
   }
 
   .hero .arrow-button {
